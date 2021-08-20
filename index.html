@@ -80,8 +80,7 @@
                     <th scope="col">#</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Kategori</th>
-                    <th scope="col"><button type="button" onclick="confirmDelete(${buku.id},'${buku.name}')"
-                            class="btn btn-outline-danger">Delete</button></th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody id="table-data">
@@ -138,7 +137,8 @@
                             <th scope="row">${buku.id}</th>
                             <td id ='nama-buku'>${buku.name}</td>
                             <td>${buku.type_book.name}</td>
-                            <td>@mdo</td>
+                            <td><button type="button" onclick="confirmDelete(${buku.id},'${buku.name}')"
+                            class="btn btn-outline-danger">Delete</button></td>
                         </tr>`
 
                 });
